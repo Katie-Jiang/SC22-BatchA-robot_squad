@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Business Casual - House Prices</title>
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i" rel="stylesheet" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+    </head>
+    <body>
+        <header>
+            <h1 class="site-heading text-center text-faded d-none d-lg-block">
+                <span class="site-heading-upper text-primary mb-3">Robot Squad's</span>
+                <span class="site-heading-lower">House Price Prediction AI</span>
+            </h1>
+        </header>
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-dark py-lg-4" id="mainNav">
+            <div class="container">
+                <a class="navbar-brand text-uppercase fw-bold d-lg-none" href="index.html">House Prices</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item px-lg-4"><a class="nav-link text-uppercase" href="index.html">Home</a></li>
+                        <li class="nav-item px-lg-4"><a class="nav-link text-uppercase" href="products.html">Data Visualization</a></li>
+                      <li class="nav-item px-lg-4"><a class="nav-link text-uppercase" href="model.html">Data Models</a></li>
+                        <li class="nav-item px-lg-4"><a class="nav-link text-uppercase" href="store.html">Conclusion</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <section class="page-section cta">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-9 mx-auto">
+                        <div class="cta-inner bg-faded text-center rounded">
+                            <h2 class="section-heading mb-5">
+                                <span class="section-heading-upper">House Price</span>
+                                <span class="section-heading-lower">Conclusion</span>
+                            </h2>
+                            <ul class="list-unstyled list-hours mb-5 text-left mx-auto">                         
+  <p>
+    Please insert the following requirement so our product can predict the price of your dream home.
+  </p>
+  <p>
+    What city would you want to live in?<br>
+    How many bedrooms would you like?<br>
+    How many bathrooms would you like?<br>
+    What's your ideal square footage of living space?<br>
+    How many floors would you like your house to have?<br>
+  </p>
+</ul>
+ <h3>House Price Prediction Form</h3>
+ 
+<div class="col-xl-9 mx-auto">
+  <form action="" method="POST">
+    <label for="bedrooms">Number of Bedrooms: <br> [0-33] </label>
+    <input type="text" id="bedrooms" name="bedrooms">
+    <br> <br>
+    <label for="bathrooms">Number of Bathrooms: <br> [0-8] </label>
+    <input type="text" id="bathrooms" name="bathrooms">
+    <br> <br>
+    <label for="sqft_living">Square footage of living area: <br> [290-13,500] </label>
+    <input type="text" id="sqft_living" name="sqft_living">
+    <br> <br>
+    <label for="sqft_lot">Square footage of lot: <br> [520-1,650,000] </label>
+    <input type="text" id="sqft_lot" name="sqft_lot">
+    <br> <br>
+    <label for="floors">Number of Floors: <br> [0-3] </label>
+    <input type="text" id="floors" name="floors">
+    <br> <br>
+    <label for="waterfront">Waterfront:</label>
+    <select id="waterfront" name="waterfront">
+      <option value="0">No</option>
+      <option value="1">Yes</option>
+    </select>
+    <br> <br>
+    <label for="view">View:</label>
+    <select id="view" name="view">
+      <option value="0">1</option>
+      <option value="1">2</option>
+      <option value="2">3</option>
+      <option value="3">4</option>
+    </select>
+    <br> <br>
+    <label for="condition">Condition:</label>
+    <select id="condition" name="condition">
+      <option value="0">1</option>
+      <option value="1">2</option>
+      <option value="2">3</option>
+      <option value="3">4</option>
+      <option value="4">5</option>
+    </select>
+    <br> <br>
+    <label for="grade">Grade:</label>
+    <select id="grade" name="grade">
+      <option value="0">1</option>
+      <option value="1">2</option>
+      <option value="2">3</option>
+      <option value="3">4</option>
+      <option value="4">5</option>
+      <option value="5">6</option>
+      <option value="6">7</option>
+      <option value="7">8</option>
+      <option value="8">9</option>
+      <option value="9">10</option>
+      <option value="10">11</option>
+      <option value="11">12</option>
+      <option value="12">13</option>
+    </select>
+    <br> <br>
+    <label for="sqft_above">Square footage of upper levels: <br> [290 - 9,410] </label>
+    <input type="text" id="sqft_above" name="sqft_above">
+    <br> <br>
+    <label for="sqft_basement">Square Footage of Basement: <br> [0 - 4,820]</label>
+    <input type="text" id="sqft_basement" name="sqft_basement">
+    <br> <br>
+    <label for="yr_built">Year Built: <br> [1900 - 2015]</label>
+    <input type="text" id="yr_built" name="yr_built">
+    <br> <br>
+    <label for="sqft_living15:">Square footage of living area:**NEAREST 15 NEIGHBORS??**<br> [299 - 6,210]</label>
+    <input type="text" id="sqft_living15" name="sqft_living15">
+    <br> <br>
+    <label for="sqft_lot15:">Square Footage of Lot:() <br> [651 - 871,000]</label>
+    <input type="text" id="sqft_lot15" name="sqft_lot15">
+    <br> <br>
+    <label for="year">Year house is sold: <br> [1900 - 2015]</label>
+    <input type="text" id="year" name="year">
+    <br> <br>
+    <label for="month">Month:</label>
+    <select id="month" name="month">
+      <option value="0">1</option>
+      <option value="1">2</option>
+      <option value="2">3</option>
+      <option value="3">4</option>
+      <option value="4">5</option>
+      <option value="5">6</option>
+      <option value="6">7</option>
+      <option value="7">8</option>
+      <option value="8">9</option>
+      <option value="9">10</option>
+      <option value="10">11</option>
+      <option value="11">12</option>
+    </select>
+    <br> <br>
+    <label for="yr_age:">Age: <br> [0-115] </label>
+    <input type="text" id="yr_age" name="yr_age">
+      <br> <br>
+    <label for="renovation">Renovation:</label>
+    <select id="renovation" name="renovation">
+      <option value="0">No</option>
+      <option value="1">Yes</option>
+    </select>
+    <br> <br>
+     <label for="city">City:</label>
+      <select id="city" name="city">
+      <option value="0">Auburn</option>
+      <option value="1">Bellevue</option>
+      <option value="2">Black Diamond</option>
+      <option value="3">Bothell</option>
+      <option value="4">Carnation</option>
+      <option value="5">Duvall</option>
+      <option value="6">Enumclaw</option>
+      <option value="7">Fall City</option>
+      <option value="8">Federal Way</option>
+      <option value="9">Issaquah</option>
+      <option value="10">Kenimore</option>
+      <option value="11">Kent</option>
+      <option value="12">Kirkland</option>
+      <option value="13">Maple Valley</option>
+      <option value="14">Medina</option>
+      <option value="15">Mercer Island</option>
+      <option value="16">North Bend</option>
+      <option value="17">Redmond</option>
+      <option value="18">Renton</option>
+      <option value="19">Sammamish</option>
+      <option value="20">Seattle</option>
+      <option value="21">Snoqualmie</option>
+      <option value="22">Vashon</option>
+      <option value="23">Woodinville</option>
+    </select>
+    <br> <br>
+    <input type="submit" value="Submit"> <br>
+    </form>
+  </div>
+                 
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="page-section about-heading">
+            <div class="container">
+                <img class="img-fluid rounded about-heading-img mb-3 mb-lg-0" src="assets/img/about.jpg" alt="..." />
+                <div class="about-heading-content">
+                    <div class="row">
+                        <div class="col-xl-9 col-lg-10 mx-auto">
+                            <div class="bg-faded rounded p-5">
+                                <h2 class="section-heading mb-4">
+                                    <span class="section-heading-upper">Robot Squad</span>
+                                    <span class="section-heading-lower">About Our Team </span>
+                                </h2>
+                                <p>Instructor: <b>Katie Jiang</b></p>
+                                <p class="mb-0">
+                                  <b> Sneha Arya </b>
+                                  <br> snehaarya100@gmail.com <br> <br>
+                                <p class="mb-0">
+                                  <b> Juan Medina </b>
+                                <p class="mb-0">
+                                  <b>Jz Kamille Eclarin</b>
+                                  <br> j.eclarin.z@gmail.com <br> <br>
+                                <p class="mb-0">
+                                  <b> Aidan Honaker </b>
+                                <p class="mb-0">
+                                  <b>Santiago Londono </b>
+                                <p class="mb-0">
+                                  <b>Kate Palczynski</b>
+                                  <br> palczynskikate@gmail.com <br> <br>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer class="footer text-faded text-center py-5">
+            <div class="container"><p class="m-0 small">Copyright &copy; AI Camp 2022</p></div>
+        </footer>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+    </body>
+</html>
